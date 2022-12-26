@@ -3,7 +3,6 @@ from rest_framework import mixins, permissions, viewsets
 from rest_framework.filters import SearchFilter
 from rest_framework.pagination import LimitOffsetPagination
 
-from .permissions import IsOwnerOrReadOnly
 from api.serializers import (
     CommentSerializer,
     FollowSerializer,
@@ -11,6 +10,7 @@ from api.serializers import (
     PostSerializer,
 )
 from posts.models import Comment, Follow, Group, Post
+from .permissions import IsOwnerOrReadOnly
 
 
 class CreateListViewSet(
