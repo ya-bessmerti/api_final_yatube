@@ -1,4 +1,4 @@
-# Проект «API для Yatube» спринт №9 в рамках учебного курса Яндекс.Практикум
+# Проект «API для Yatube»
 
 ## Описание
 API для социальной сети блогеров Yatube, созданной в рамках учебного курса Яндекс.Практикум
@@ -12,11 +12,15 @@ API - это интерфейс для обмена данными, предос
 - Получение и работа с комментариями к постам
 - Подписка на авторов
 
-## Технологии
-Python 3.7
-djangorestframework 3.12.4
+## Стек технологий:
+* [Python 3.7](https://www.python.org/downloads/)
+* [Django 2.2.16](https://www.djangoproject.com/download/)
+* [Django Rest Framework 3.12.4](https://pypi.org/project/djangorestframework/#files)
+* [Pytest 6.2.4](https://pypi.org/project/pytest/)
+* [Simple-JWT 1.7.2](https://pypi.org/project/djangorestframework-simplejwt/)
 
-## Запуск проекта
+## Как запустить проект:
+
 - Клонируйте репозитроий с проектом:
 ```
 git clone
@@ -52,6 +56,3 @@ GET /api/v1/posts/{id}/
 ```
 GET /api/v1/posts/{post_id}/comments/{id}/
 ```
-
-## Авторы
-Дмитрий 
